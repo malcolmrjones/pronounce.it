@@ -8,6 +8,7 @@ import android.view.*;
 import android.view.View.*;
 import android.widget.Button;
 
+import java.io.File;
 import java.io.IOException;
 
 public class LessonActivity extends AppCompatActivity {
@@ -37,16 +38,16 @@ public class LessonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 System.out.println("Recording audio...");
                 final MediaRecorder recorder = new MediaRecorder();
-                recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+                recorder.setAudioSource(MediaRecorder.AudioSource.DEFAULT);
                 recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
                 recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
-                recorder.setOutputFile("/storage/3236-6261/pronounceit");
                 try {
                     recorder.prepare();
+                    recorder.start();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                recorder.start();
+
 
 
                 Button button_stop = (Button)findViewById(R.id.button_stop);
