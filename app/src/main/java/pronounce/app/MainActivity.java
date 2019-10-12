@@ -29,11 +29,12 @@ public class MainActivity extends AppCompatActivity {
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         languages.setAdapter(dataAdapter);
         languages.setVisibility(View.VISIBLE);
-        buttonChangeActivity.setVisibility(View.VISIBLE);
+
         languages.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
                 selectedString = parent.getItemAtPosition(position).toString();
+                buttonChangeActivity.setVisibility(View.VISIBLE);
             }
 
             @Override
