@@ -19,7 +19,9 @@
         <activity
             android:name=".LessonSelector">
         </activity>
-
+        <activity
+            android:name=".LessonActivity">
+        </activity>
     </application>
 
 </manifest>
