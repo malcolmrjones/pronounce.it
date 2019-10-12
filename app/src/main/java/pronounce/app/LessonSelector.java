@@ -12,6 +12,7 @@ public class LessonSelector extends AppCompatActivity {
         setContentView(R.layout.activity_lessonselector);
     }
     public void button1Action(View v) {
-//        Intent changetolesson = new Intent (this, LessonActivity.class);
+        Intent changeToLesson = new Intent (this, LessonActivity.class);
+        startActivity(changeToLesson);
     }
 }

@@ -22,9 +22,8 @@
             android:name=".LessonSelector">
         </activity>
         <activity
-            android:name=".LessonActivity"
-            android:exported="true" />
-
+            android:name=".LessonActivity">
+        </activity>
     </application>
 
 </manifest>
