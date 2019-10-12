@@ -2,6 +2,7 @@ package pronounce.app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.view.*;
@@ -22,11 +23,6 @@ public class LessonActivity extends AppCompatActivity {
         Button button_listen = (Button)findViewById(R.id.button_listen);
         Button button_record = (Button)findViewById(R.id.button_record);
 
-        button_exit.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                System.out.println("Exit lesson...");
-            }
-        });
 
         button_listen.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -61,9 +57,12 @@ public class LessonActivity extends AppCompatActivity {
         });
 
 
-
     }
-
+    public void onClickExit (View v) {
+        Intent exitToLessonPage = new Intent(this, LessonSelector.class);
+        startActivity(exitToLessonPage);
+        // System.out.println("Exit lesson...");
+    }
 
 
 }
