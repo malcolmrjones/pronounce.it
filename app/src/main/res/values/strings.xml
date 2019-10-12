@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">pronounce.it</string>
+    <string name="pronounce_it">Pronounce.it</string>
+    <string name="get_started">Get Started</string>
+    <string name="select_language">Select Language</string>
+    <string name="spanish">Spanish</string>
+    <string name="let_s_learn">Let\'s Learn!</string>
+    <string name="lesson_1">Lesson 1</string>
 </resources>
