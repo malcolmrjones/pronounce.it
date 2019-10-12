@@ -14,6 +14,7 @@ public class Lesson {
 	String name = "";
 	boolean isSentence;
 	int toRemove;
+	File currentFile;
 	
 	public Lesson(ArrayList<String> sentences, ArrayList<String> translations, ArrayList<String> missedWords, String name, ArrayList<File> fileList)
 	{
@@ -50,17 +51,25 @@ public class Lesson {
 			sentence = sentences.get(sToChoose);
 			toRemove = sToChoose;
 			isSentence = true;
+			currentFile = fileList.get(sToChoose);
+			
 		}
 		else
 		{
 			sentence = missedWords.get(sToChoose - sentences.size());
 			toRemove = sToChoose - sentences.size();
 			isSentence = false;
+			currentFile = fileList.get(sToChoose);
 		}
 		
 		return sentence;
 	}
 		
+	public File getCurrentFile()
+	{
+		return currentFile;
+	}
+	
 	public void checkAccuracy(String s, String input)
 	{
 		AccuracyController a1 = new AccuracyController(sentences, missedWords);

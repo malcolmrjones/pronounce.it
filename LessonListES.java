@@ -8,19 +8,19 @@ import java.io.File;
 public class LessonListES implements LessonList {
 
 	//all audio files for spanish
-	File aud1 = new File("Recording (1).wav");
-	File aud2 = new File("Recording (2).wav");
-	File aud3 = new File("Recording (3).wav");
-	File aud4 = new File("Recording (4).wav");
-	File aud5 = new File("Recording (5).wav");
-	File aud6 = new File("Recording (6).wav");
-	File aud7 = new File("Recording (7).wav");
-	File aud8 = new File("Recording (8).wav");
-	File aud9 = new File("Recording (9).wav");
-	File aud10 = new File("Recording (10).wav");
-	File aud11 = new File("Recording (11).wav");
-	File aud12 = new File("Recording (12).wav");
-	File aud13 = new File("Recording (13).wav");
+	File aud1 = new File("recording.wav");
+	File aud2 = new File("recording-2.wav");
+	File aud3 = new File("recording-3.wav");
+	File aud4 = new File("recording-4.wav");
+	File aud5 = new File("recording-5.wav");
+	File aud6 = new File("recording-6.wav");
+	File aud7 = new File("recording-7.wav");
+	File aud8 = new File("recording-8.wav");
+	File aud9 = new File("recording-9.wav");
+	File aud10 = new File("recording-10.wav");
+	File aud11 = new File("recording-11.wav");
+	File aud12 = new File("recording-12.wav");
+	File aud13 = new File("recording-13.wav");
 	
 	ArrayList<String> ES_sent1 = new ArrayList<String>(Arrays.asList(
 			"Ella come.", "Él bebe.", "Ella bebe.","Él come.", "Yo corro.", "Él corre.", "Nosotros comemos.", "Nosotros corremos."));
