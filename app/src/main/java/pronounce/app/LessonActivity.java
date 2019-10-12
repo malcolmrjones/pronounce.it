@@ -26,21 +26,6 @@ public class LessonActivity extends AppCompatActivity {
         Button button_record = (Button)findViewById(R.id.button_record);
 
 
-        button_listen.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                System.out.println("Playing audio...");
-
-                MediaPlayer mp = new MediaPlayer();
-
-                try {
-                    mp.setDataSource(Environment.getExternalStorageDirectory().getAbsolutePath() + "/aud.wav");
-                    mp.prepare();
-                    mp.start();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
 
         button_record.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -89,5 +74,9 @@ public class LessonActivity extends AppCompatActivity {
         // System.out.println("Exit lesson...");
     }
 
-
+    public void onClickPlay(View v) {
+        MediaPlayer mp = MediaPlayer.create(this, R.raw.recording);
+        mp.start();
+        System.out.println("Listen to audio...");
+    }
 }
