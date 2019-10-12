@@ -3,28 +3,33 @@ package accuracycontroller;
 import java.util.ArrayList;
 import java.util.Random;
 
+import java.io.File;
+
 public class Lesson {
 
 	ArrayList<String> sentences = new ArrayList<String>();
 	ArrayList<String> translations = new ArrayList<String>();
 	ArrayList<String> missedWords = new ArrayList<String>();
+	ArrayList<File> fileList = new ArrayList<File>();
 	String name = "";
 	boolean isSentence;
 	int toRemove;
 	
-	public Lesson(ArrayList<String> sentences, ArrayList<String> translations, ArrayList<String> missedWords, String name)
+	public Lesson(ArrayList<String> sentences, ArrayList<String> translations, ArrayList<String> missedWords, String name, ArrayList<File> fileList)
 	{
 		this.sentences = sentences;
 		this.translations = translations;
 		this.missedWords = missedWords;	
 		this.name = name;
+		this.fileList = fileList;
 	}
 	
-	public Lesson(ArrayList<String> sentences, ArrayList<String> translations, String name)
+	public Lesson(ArrayList<String> sentences, ArrayList<String> translations, String name, ArrayList<File> fileList)
 	{
 		this.sentences = sentences;
 		this.translations = translations;
 		this.name = name;
+		this.fileList = fileList;
 	}
 	
 	public String getName()

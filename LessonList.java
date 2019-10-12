@@ -11,7 +11,7 @@ public interface LessonList {
         	if(s.equals(list.get(i).getName()))
         	{
         		return list.get(i);
-        	};
+        	}
         }  
 	return null;
 	}
