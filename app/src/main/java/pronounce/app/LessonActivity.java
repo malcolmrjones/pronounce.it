@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaRecorder;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.*;
 import android.view.View.*;
 import android.widget.Button;
@@ -38,9 +39,18 @@ public class LessonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 System.out.println("Recording audio...");
                 final MediaRecorder recorder = new MediaRecorder();
-                recorder.setAudioSource(MediaRecorder.AudioSource.DEFAULT);
-                recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
-                recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+                recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+                recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+                recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+                System.out.println(Environment.getExternalStorageDirectory().getAbsolutePath());
+                File yourFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/aud.3gp");
+                try {
+                    yourFile.createNewFile();
+                    recorder.setOutputFile(yourFile.getAbsolutePath());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
                 try {
                     recorder.prepare();
                     recorder.start();
