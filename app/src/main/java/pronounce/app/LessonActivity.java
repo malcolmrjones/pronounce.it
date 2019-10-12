@@ -36,10 +36,12 @@ public class LessonActivity extends AppCompatActivity {
                 System.out.println("Recording audio...");
                 final MediaRecorder recorder = new MediaRecorder();
                 recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-                recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-                recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+                recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+                recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+                recorder.setAudioEncodingBitRate(128000);
+                recorder.setAudioSamplingRate(44100);
                 System.out.println(Environment.getExternalStorageDirectory().getAbsolutePath());
-                File yourFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/aud.3gp");
+                File yourFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/aud.mp4");
                 try {
                     yourFile.createNewFile();
                     recorder.setOutputFile(yourFile.getAbsolutePath());
@@ -60,6 +62,8 @@ public class LessonActivity extends AppCompatActivity {
                 button_stop.setOnClickListener(new OnClickListener() {
                     public void onClick(View v) {
                         recorder.stop();
+                        recorder.reset();
+                        recorder.release();
                         System.out.println("Recording stopped...");
                     }
                 });
