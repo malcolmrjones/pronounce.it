@@ -7,4 +7,9 @@
     <string name="let_s_learn">Let\'s Learn!</string>
     <string name="lesson_1">Lesson 1</string>
     <string name="return_to_home_page">Return to Home Page</string>
+    <string name="lesson_01">Lesson 01</string>
+    <string name="listen">Listen</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="exit">EXIT</string>
 </resources>
