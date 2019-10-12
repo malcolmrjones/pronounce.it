@@ -3,7 +3,7 @@ package accuracycontroller;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class LessonListES {
+public class LessonListES implements LessonList {
 
 	ArrayList<String> ES_sent1 = new ArrayList<String>(Arrays.asList(
 			"Ella come.", "Él bebe.", "Ella bebe.","Él come.", "Yo corro.", "Él corre.", "Nosotros comemos.", "Nosotros corremos."));
@@ -20,15 +20,10 @@ public class LessonListES {
 	Lesson ES2 = new Lesson(ES_sent2, ES_trans2, "ES2");
 		
 	ArrayList<Lesson> ESList = new ArrayList<Lesson>(Arrays.asList(ES1, ES2));
+	
+
 	public Lesson getLesson(String s)
 	{
-        for (int i = 0; i < ESList.size(); i++)
-        {
-        	if(s.equals(ESList.get(i).getName()))
-        	{
-        		return ESList.get(i);
-        	};
-        }  
-	return null;
-	}
+		return getLesson(s, ESList);
+	};
 }
