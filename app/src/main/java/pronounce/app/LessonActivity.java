@@ -3,6 +3,7 @@ package pronounce.app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
@@ -25,11 +26,7 @@ public class LessonActivity extends AppCompatActivity {
         Button button_record = (Button)findViewById(R.id.button_record);
 
 
-        button_listen.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                System.out.println("Listen to audio...");
-            }
-        });
+
 
         button_record.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -78,5 +75,9 @@ public class LessonActivity extends AppCompatActivity {
         // System.out.println("Exit lesson...");
     }
 
-
+    public void onClickPlay(View v) {
+        MediaPlayer mp = MediaPlayer.create(this, R.raw.recording);
+        mp.start();
+        System.out.println("Listen to audio...");
+    }
 }
