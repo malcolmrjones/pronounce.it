@@ -8,8 +8,9 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_marginTop="50dp"
         android:text="@string/pronounce_it"
         android:textSize="24sp"
@@ -18,8 +19,10 @@
 
     <Button
         android:id="@+id/buttonLanguageSelector"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+
         android:onClick="Button1Action"
         android:text="@string/get_started"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,17 +30,20 @@
 
     <Spinner
         android:id="@+id/languages"
-        android:layout_width="148dp"
+        android:layout_width="match_parent"
         android:layout_height="27dp"
         android:visibility="invisible"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLanguageSelector"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/buttonChangeActivity"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+
         android:onClick="ButtonChangeAction"
         android:text="@string/let_s_learn"
         android:visibility="invisible"
