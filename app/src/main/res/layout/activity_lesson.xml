@@ -4,34 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#393E41"
     tools:context=".LessonActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-197dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="411dp"
-            android:layout_height="69dp"
+            android:layout_width="412dp"
+            android:layout_height="65dp"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="36sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toTopOf="@+id/button_exit"
+            app:layout_constraintVertical_bias="0.016" />
 
         <Button
             android:id="@+id/button_listen"
-            android:layout_width="269dp"
-            android:layout_height="104dp"
+            android:layout_width="268dp"
+            android:layout_height="135dp"
             android:layout_marginStart="36dp"
+            android:backgroundTint="#3F88C5"
             android:onClick="onClickPlay"
             android:text="@string/listen"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,62 +52,55 @@
 
         <Button
             android:id="@+id/button_record"
-            android:layout_width="168dp"
-            android:layout_height="67dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginBottom="12dp"
+            android:layout_width="196dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="144dp"
+            android:backgroundTint="#FF0202"
             android:drawableLeft="@drawable/ic__ionicons_svg_md_radio_button_on"
             android:onClick="onClickRecord"
             android:text="@string/record"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/button_submit"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/button_stop"
-            android:layout_width="157dp"
-            android:layout_height="65dp"
-            android:layout_marginStart="8dp"
-            android:drawableLeft="@drawable/ic__ionicons_svg_md_square"
-            android:text="@string/stop"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/button_record"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/button_record" />
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_word" />
 
         <Button
             android:id="@+id/button_exit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="72dp"
+            android:layout_height="76dp"
             android:onClick="onClickExit"
             android:text="@string/exit"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.101" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/button_submit"
-            android:layout_width="193dp"
-            android:layout_height="55dp"
+            android:layout_width="192dp"
+            android:layout_height="73dp"
+            android:background="#4CAF50"
             android:onClick="onClickSubmit"
             android:text="Submit"
+            android:textColor="#FFFFFF"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.94" />
+            app:layout_constraintEnd_toEndOf="@+id/button_record"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button_record"
+            app:layout_constraintTop_toBottomOf="@+id/button_record"
+            app:layout_constraintVertical_bias="0.154" />
 
         <TextView
             android:id="@+id/label_word"
             android:layout_width="234dp"
             android:layout_height="60dp"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

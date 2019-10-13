@@ -644,8 +644,8 @@ public final class R {
         public static final int blocking = 0x7f070020;
         public static final int bottom = 0x7f070021;
         public static final int buttonPanel = 0x7f070026;
-        public static final int checkbox = 0x7f070031;
-        public static final int chronometer = 0x7f070032;
+        public static final int checkbox = 0x7f070030;
+        public static final int chronometer = 0x7f070031;
         public static final int content = 0x7f070036;
         public static final int contentPanel = 0x7f070037;
         public static final int custom = 0x7f070038;
@@ -715,15 +715,15 @@ public final class R {
         public static final int text2 = 0x7f070096;
         public static final int textSpacerNoButtons = 0x7f070097;
         public static final int textSpacerNoTitle = 0x7f070098;
-        public static final int time = 0x7f07009a;
-        public static final int title = 0x7f07009b;
-        public static final int titleDividerNoCustom = 0x7f07009c;
-        public static final int title_template = 0x7f07009d;
-        public static final int top = 0x7f07009e;
-        public static final int topPanel = 0x7f07009f;
-        public static final int uniform = 0x7f0700a0;
-        public static final int up = 0x7f0700a1;
-        public static final int wrap_content = 0x7f0700a5;
+        public static final int time = 0x7f07009b;
+        public static final int title = 0x7f07009c;
+        public static final int titleDividerNoCustom = 0x7f07009d;
+        public static final int title_template = 0x7f07009e;
+        public static final int top = 0x7f07009f;
+        public static final int topPanel = 0x7f0700a0;
+        public static final int uniform = 0x7f0700a1;
+        public static final int up = 0x7f0700a2;
+        public static final int wrap_content = 0x7f0700a6;
     }
     public static final class integer {
         private integer() {}

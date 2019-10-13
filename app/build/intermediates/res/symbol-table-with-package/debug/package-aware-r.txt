@@ -691,7 +691,6 @@ id button_exit
 id button_listen
 id button_next
 id button_record
-id button_stop
 id button_submit
 id center
 id center_horizontal
@@ -702,6 +701,7 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id constraintLayout
 id content
 id contentPanel
 id custom
@@ -801,6 +801,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id textView2
 id time
 id title

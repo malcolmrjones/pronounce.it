@@ -85,7 +85,7 @@ public final class R {
         public static final int actions = 0x7f070017;
         public static final int async = 0x7f07001d;
         public static final int blocking = 0x7f070020;
-        public static final int chronometer = 0x7f070032;
+        public static final int chronometer = 0x7f070031;
         public static final int forever = 0x7f070046;
         public static final int icon = 0x7f07004c;
         public static final int icon_group = 0x7f07004d;
@@ -104,8 +104,8 @@ public final class R {
         public static final int tag_unhandled_key_listeners = 0x7f070094;
         public static final int text = 0x7f070095;
         public static final int text2 = 0x7f070096;
-        public static final int time = 0x7f07009a;
-        public static final int title = 0x7f07009b;
+        public static final int time = 0x7f07009b;
+        public static final int title = 0x7f07009c;
     }
     public static final class integer {
         private integer() {}

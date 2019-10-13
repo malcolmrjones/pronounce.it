@@ -4,51 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#393E41"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="413dp"
+        android:layout_height="115dp"
         android:gravity="center"
-        android:layout_marginTop="50dp"
         android:text="@string/pronounce_it"
-        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonLanguageSelector"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_width="314dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
 
+        android:layout_marginTop="164dp"
+        android:background="#26C485"
+        android:gravity="center"
         android:onClick="Button1Action"
         android:text="@string/get_started"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <Spinner
         android:id="@+id/languages"
-        android:layout_width="match_parent"
-        android:layout_height="27dp"
-        android:visibility="invisible"
+        android:layout_width="359dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:background="#FFFFFF"
         android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLanguageSelector"
         tools:visibility="invisible" />
 
     <Button
         android:id="@+id/buttonChangeActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_width="335dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
 
+        android:layout_marginTop="268dp"
+        android:background="#0C81F3"
+        android:gravity="center"
         android:onClick="ButtonChangeAction"
         android:text="@string/let_s_learn"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/languages"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLanguageSelector"
+        app:layout_constraintVertical_bias="0.0"
         tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
