@@ -684,6 +684,8 @@ id blocking
 id bottom
 id button
 id button1
+id button3
+id button4
 id buttonChangeActivity
 id buttonLanguageSelector
 id buttonPanel

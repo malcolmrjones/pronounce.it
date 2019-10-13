@@ -28,6 +28,16 @@ public class LessonSelector extends AppCompatActivity {
         changeToLesson.putExtra("Lesson", lessonlist.getLesson("ES2"));
         startActivity(changeToLesson);
     }
+    public void button3Action(View v) {
+        Intent changeToLesson = new Intent (this, LessonActivity.class);
+        changeToLesson.putExtra("Lesson", lessonlist.getLesson("ES3"));
+        startActivity(changeToLesson);
+    }
+    public void button4Action(View v) {
+        Intent changeToLesson = new Intent (this, LessonActivity.class);
+        changeToLesson.putExtra("Lesson", lessonlist.getLesson("ES4"));
+        startActivity(changeToLesson);
+    }
     public void returnHomeAction(View v) {
         Intent returnHome = new Intent(this, MainActivity.class
         );

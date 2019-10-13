@@ -43,7 +43,7 @@ public class LessonListES implements LessonList {
 	Lesson ES1 = new Lesson(ES_sent1, ES_trans1, "ES1", ES_audio1);
 	
 	ArrayList<String> ES_sent2 = new ArrayList<String>(Arrays.asList(
-			"Hola!", "Como estas?", "Estoy bien.", "Gracias.", "De nada."));
+			"Hola!", "Cómo estas?", "Estoy bien.", "Gracias.", "De nada."));
 	ArrayList<String> ES_trans2 = new ArrayList<String>(Arrays.asList(
 			"Hello!", "How are you?", "I'm well.","Thanks.", "You're welcome."));
 	ArrayList<File> ES_audio2 = new ArrayList<File>(Arrays.asList(aud9, aud10, aud11, aud12, aud13));

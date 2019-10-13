@@ -42,6 +42,28 @@
         android:textSize="24sp" />
 
     <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_margin="15sp"
+        android:background="#0C81F3"
+        android:onClick="button3Action"
+        android:text="Lesson 3"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_margin="15sp"
+        android:background="#0C81F3"
+        android:onClick="button4Action"
+        android:text="Lesson 4"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
         android:id="@+id/returnHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
