@@ -13,7 +13,7 @@
         tools:layout_editor_absoluteY="1dp">
 
         <TextView
-            android:id="@+id/label_title"
+            android:id="@+id/textView2"
             android:layout_width="411dp"
             android:layout_height="69dp"
             android:textAlignment="center"
