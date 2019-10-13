@@ -27,7 +27,7 @@ public class LessonActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson);
+        setContentView(R.layout.activity_lesson2);
 
         Button button_exit = (Button)findViewById(R.id.button_exit);
         Button button_listen = (Button)findViewById(R.id.button_listen);

@@ -13,4 +13,6 @@
     <string name="stop">Stop</string>
     <string name="exit">EXIT</string>
     <string name="lesson_2">LESSON 2</string>
+    <string name="lesson_02">Lesson 02</string>
+    <string name="submit">Submit</string>
 </resources>
