@@ -736,7 +736,6 @@ id label_forscore2
 id label_language
 id label_score
 id label_sentence
-id label_sentence2
 id label_userinput
 id label_userinputtext
 id label_word

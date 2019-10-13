@@ -61,8 +61,7 @@ public class LessonActivity extends AppCompatActivity {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
 
-        Locale spanish = new Locale("es", "ES");
-        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, spanish);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "es-ES");
 
         if(intent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(intent, 10);
