@@ -1,7 +1,7 @@
-#Sat Oct 12 17:14:47 EDT 2019
-base.0=C\:\\Users\\david\\Documents\\GitHub\\pronounce.it\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Sun Oct 13 00:17:09 EDT 2019
+base.0=C\:\\DEV\\Projects\\pronounce.it\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\david\\Documents\\GitHub\\pronounce.it\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=C\:\\DEV\\Projects\\pronounce.it\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
