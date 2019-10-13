@@ -17,7 +17,7 @@ public class Lesson implements Serializable {
 	int toRemove;
 	File currentFile;
 	String currentSentence;
-	
+
 	public Lesson(ArrayList<String> sentences, ArrayList<String> translations, ArrayList<String> missedWords, String name, ArrayList<File> fileList)
 	{
 		this.sentences = sentences;
