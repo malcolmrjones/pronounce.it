@@ -23,7 +23,6 @@
         </activity>
         <activity android:name=".LessonSelector"></activity>
         <activity android:name=".LessonActivity"></activity>
-        <activity android:name=".LessonActivity2"></activity>
 
     </application>
 

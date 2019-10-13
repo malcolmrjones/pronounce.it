@@ -32,7 +32,6 @@
         </activity>
         <activity android:name="pronounce.app.LessonSelector" />
         <activity android:name="pronounce.app.LessonActivity" />
-        <activity android:name="pronounce.app.LessonActivity2" />
     </application>
 
 </manifest>

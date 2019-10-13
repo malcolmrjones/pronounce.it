@@ -25,7 +25,6 @@ import backend.LessonListES;
 
 public class LessonActivity extends AppCompatActivity {
 
-    private LessonListES currentList;
     private Lesson currentLesson;
     private String currentSentence;
     private String userInput;
@@ -42,58 +41,16 @@ public class LessonActivity extends AppCompatActivity {
         Button button_listen = (Button)findViewById(R.id.button_listen);
         Button button_record = (Button)findViewById(R.id.button_record);
 
-        currentList = new LessonListES();
-        if (getIntent().getSerializableExtra("Lesson") == null)
-        currentLesson = currentList.getLesson("ES1");
-        else {
-            currentLesson = (Lesson)getIntent().getSerializableExtra("Lesson");
-        }
+
+        currentLesson = (Lesson)getIntent().getSerializableExtra("Lesson");
+
         title.setText("Lesson " + currentLesson.getName().substring(currentLesson.getName().length()-1));
 
         currentLesson.pickSentence();
         currentSentence = currentLesson.getSentence();
 
-//        button_record.setOnClickListener(new OnClickListener() {
-//            public void onClick(View v) {
-//                System.out.println("Recording audio...");
-//                final MediaRecorder recorder = new MediaRecorder();
-//                recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-//                recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
-//                recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
-//                recorder.setAudioEncodingBitRate(128000);
-//                recorder.setAudioSamplingRate(44100);
-//                System.out.println(Environment.getExternalStorageDirectory().getAbsolutePath());
-//                File yourFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/aud.mp4");
-//                try {
-//                    yourFile.createNewFile();
-//                    recorder.setOutputFile(yourFile.getAbsolutePath());
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//
-//                try {
-//                    recorder.prepare();
-//                    recorder.start();
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
-//
-//
-//
-//                Button button_stop = (Button)findViewById(R.id.button_stop);
-//                button_stop.setOnClickListener(new OnClickListener() {
-//                    public void onClick(View v) {
-//                        recorder.stop();
-//                        recorder.reset();
-//                        recorder.release();
-//                        System.out.println("Recording stopped...");
-//                    }
-//                });
-//            }
-//        });
-
-
     }
+
     public void onClickExit (View v) {
         Intent exitToLessonPage = new Intent(this, LessonSelector.class);
         startActivity(exitToLessonPage);
