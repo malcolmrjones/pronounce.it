@@ -3630,14 +3630,26 @@ public final class R {
     public static final int recording_11=0x7f0b0002;
     public static final int recording_12=0x7f0b0003;
     public static final int recording_13=0x7f0b0004;
-    public static final int recording_2=0x7f0b0005;
-    public static final int recording_3=0x7f0b0006;
-    public static final int recording_4=0x7f0b0007;
-    public static final int recording_5=0x7f0b0008;
-    public static final int recording_6=0x7f0b0009;
-    public static final int recording_7=0x7f0b000a;
-    public static final int recording_8=0x7f0b000b;
-    public static final int recording_9=0x7f0b000c;
+    public static final int recording_14=0x7f0b0005;
+    public static final int recording_15=0x7f0b0006;
+    public static final int recording_16=0x7f0b0007;
+    public static final int recording_17=0x7f0b0008;
+    public static final int recording_18=0x7f0b0009;
+    public static final int recording_19=0x7f0b000a;
+    public static final int recording_2=0x7f0b000b;
+    public static final int recording_20=0x7f0b000c;
+    public static final int recording_21=0x7f0b000d;
+    public static final int recording_22=0x7f0b000e;
+    public static final int recording_23=0x7f0b000f;
+    public static final int recording_24=0x7f0b0010;
+    public static final int recording_25=0x7f0b0011;
+    public static final int recording_3=0x7f0b0012;
+    public static final int recording_4=0x7f0b0013;
+    public static final int recording_5=0x7f0b0014;
+    public static final int recording_6=0x7f0b0015;
+    public static final int recording_7=0x7f0b0016;
+    public static final int recording_8=0x7f0b0017;
+    public static final int recording_9=0x7f0b0018;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0c0000;
