@@ -729,7 +729,10 @@ id info
 id invisible
 id italic
 id label_forscore
+id label_forscore2
+id label_language
 id label_score
+id label_sentence
 id label_word
 id languages
 id left
