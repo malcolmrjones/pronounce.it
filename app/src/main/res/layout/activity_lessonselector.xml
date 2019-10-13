@@ -11,6 +11,13 @@
         android:text="@string/lesson_1" />
 
     <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="button2Action"
+        android:text="@string/lesson_2" />
+
+    <Button
         android:id="@+id/returnHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

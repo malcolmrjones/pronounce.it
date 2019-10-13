@@ -15,6 +15,10 @@ public class LessonSelector extends AppCompatActivity {
         Intent changeToLesson = new Intent (this, LessonActivity.class);
         startActivity(changeToLesson);
     }
+    public void button2Action(View v) {
+        Intent changeToLesson2 = new Intent (this, LessonActivity2.class);
+        startActivity(changeToLesson2);
+    }
     public void returnHomeAction(View v) {
         Intent returnHome = new Intent(this, MainActivity.class
         );
