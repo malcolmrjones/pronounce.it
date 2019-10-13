@@ -7,6 +7,46 @@
     android:background="#84B3DA"
     tools:context=".ResultsActivity">
 
+    <TextView
+        android:id="@+id/label_userinputtext"
+        android:layout_width="318dp"
+        android:layout_height="46dp"
+        android:text="..."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_userinput"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/label_userinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="You Said"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/label_userinputtext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/label_userinputtext"
+        app:layout_constraintTop_toBottomOf="@+id/label_sentence2" />
+
+    <TextView
+        android:id="@+id/label_sentence2"
+        android:layout_width="318dp"
+        android:layout_height="46dp"
+        android:text="..."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_language"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Button
         android:id="@+id/button_next"
         android:layout_width="176dp"

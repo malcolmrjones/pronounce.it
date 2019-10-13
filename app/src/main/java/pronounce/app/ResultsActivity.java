@@ -17,6 +17,7 @@ public class ResultsActivity extends AppCompatActivity {
     TextView labelScore;
     TextView labelSentence;
     TextView labelTranslationText;
+    TextView labelUserInputText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +26,15 @@ public class ResultsActivity extends AppCompatActivity {
 
         labelScore = (TextView) findViewById(R.id.label_score);
         labelSentence = (TextView) findViewById(R.id.label_sentence);
+        labelUserInputText = findViewById(R.id.label_userinputtext);
 
         currentLesson = (Lesson)getIntent().getSerializableExtra("Lesson");
         result = currentLesson.checkAccuracy(currentLesson.getSentence(), getIntent().getStringExtra("User Input"));
         labelScore.setText( result.getNumberIncorrect() + "/" + result.getNumberTotalWords());
         currentLesson.evaluateWord(currentLesson.getSentence());
-
         labelSentence.setText(currentLesson.getSentence());
+
+        labelUserInputText.setText(getIntent().getStringExtra("User Input"));
 
     }
 
