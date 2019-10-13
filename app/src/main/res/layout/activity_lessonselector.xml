@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#393E41"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:text="Select A Lesson"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_margin="15sp"
+        android:background="#0C81F3"
+        android:onClick="button1Action"
+        android:text="@string/lesson_1"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_margin="15sp"
+        android:background="#0C81F3"
+        android:onClick="button2Action"
+        android:text="@string/lesson_2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_margin="15sp"
+        android:background="#0C81F3"
+        android:onClick="button3Action"
+        android:text="Lesson 3"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_margin="15sp"
+        android:background="#0C81F3"
+        android:onClick="button4Action"
+        android:text="Lesson 4"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/returnHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:background="#E94F37"
+        android:onClick="returnHomeAction"
+        android:text="@string/return_to_home_page"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

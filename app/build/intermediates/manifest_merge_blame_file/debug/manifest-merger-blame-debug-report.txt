@@ -1,0 +1,66 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="pronounce.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+11-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:5:5-71
+11-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:5:22-68
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:7:22-78
+14
+15    <application
+15-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:9:5-27:19
+16        android:allowBackup="true"
+16-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.0.1] C:\Users\Malcolm Jones\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:15:9-40
+25        <activity android:name="pronounce.app.ResultsActivity" />
+25-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:16:9-62
+25-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:16:19-50
+26        <activity android:name="pronounce.app.MainActivity" >
+26-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:17:9-23:20
+26-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:17:19-47
+27            <intent-filter>
+27-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:18:13-22:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:19:17-69
+28-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:19:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:21:17-77
+30-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:21:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity android:name="pronounce.app.LessonSelector" />
+33-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:24:9-61
+33-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:24:19-49
+34        <activity android:name="pronounce.app.LessonActivity" />
+34-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:25:9-61
+34-->C:\DEV\Projects\pronounce.it\app\src\main\AndroidManifest.xml:25:19-49
+35    </application>
+36
+37</manifest>
