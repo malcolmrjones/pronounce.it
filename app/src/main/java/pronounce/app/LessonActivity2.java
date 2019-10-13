@@ -27,7 +27,8 @@ public class LessonActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson2);
+        setContentView(R.layout.activity_lesson);
+        TextView title = (TextView)findViewById(R.id.textView2);
 
         Button button_exit = (Button)findViewById(R.id.button_exit);
         Button button_listen = (Button)findViewById(R.id.button_listen);
@@ -39,6 +40,7 @@ public class LessonActivity2 extends AppCompatActivity {
         else {
             currentLesson = (Lesson)getIntent().getSerializableExtra("Lesson");
         }
+        title.setText("Lesson " + currentLesson.getName().substring(currentLesson.getName().length()-1));
 
         currentLesson.pickSentence();
         currentSentence = currentLesson.getSentence();
