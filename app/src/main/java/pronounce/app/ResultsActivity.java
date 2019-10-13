@@ -18,6 +18,7 @@ public class ResultsActivity extends AppCompatActivity {
     TextView labelSentence;
     TextView labelTranslationText;
     TextView labelUserInputText;
+    TextView labelTranslation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,9 @@ public class ResultsActivity extends AppCompatActivity {
 
         labelScore = (TextView) findViewById(R.id.label_score);
         labelSentence = (TextView) findViewById(R.id.label_sentence);
-        labelUserInputText = findViewById(R.id.label_userinputtext);
+        labelUserInputText = (TextView) findViewById(R.id.label_userinputtext);
+        labelTranslationText = (TextView) findViewById(R.id.label_translationtext);
+        labelTranslation = (TextView) findViewById(R.id.label_translation);
 
         currentLesson = (Lesson)getIntent().getSerializableExtra("Lesson");
         result = currentLesson.checkAccuracy(currentLesson.getSentence(), getIntent().getStringExtra("User Input"));
@@ -36,6 +39,10 @@ public class ResultsActivity extends AppCompatActivity {
 
         labelUserInputText.setText(getIntent().getStringExtra("User Input"));
 
+        System.out.println("TRANSLATION: " + currentLesson.getTranslation());
+
+        if(currentLesson.getIsSentence() == false) labelTranslation.setVisibility(View.INVISIBLE);
+        labelTranslationText.setText(currentLesson.getTranslation());
     }
 
     public void onClickNext(View v) {

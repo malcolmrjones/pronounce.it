@@ -738,6 +738,8 @@ id label_forscore2
 id label_language
 id label_score
 id label_sentence
+id label_translation
+id label_translationtext
 id label_userinput
 id label_userinputtext
 id label_word

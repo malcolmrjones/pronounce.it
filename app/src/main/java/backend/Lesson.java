@@ -17,6 +17,7 @@ public class Lesson implements Serializable {
 	int toRemove;
 	File currentFile;
 	String currentSentence;
+	private String translation;
 
 	public Lesson(ArrayList<String> sentences, ArrayList<String> translations, ArrayList<String> missedWords, String name, ArrayList<File> fileList)
 	{
@@ -39,16 +40,17 @@ public class Lesson implements Serializable {
 	{
 		return name;
 	}
-	
+
 	public void pickSentence()
 	{
 		//creates random integer from size of both arrays
 		Random r = new Random();
 
 		String sentence = "";
+		translation = "";
 
 		//if smaller, goes to sentence first then missed words
-		int sToChoose = r.nextInt(sentences.size() + missedWords.size());
+		int sToChoose = r.nextInt(sentences.size() + missedWords.size()) ;
 		if(sToChoose < sentences.size())
 		{
 			sentence = sentences.get(sToChoose);
@@ -68,7 +70,9 @@ public class Lesson implements Serializable {
 		this.currentSentence = sentence;
 	}
 
-
+	public String getTranslation() {
+		return translation;
+	}
 
 	public String getSentence() {return currentSentence;}
 
@@ -96,7 +100,7 @@ public class Lesson implements Serializable {
 		//checks if translation needs to be displayed
 		if(isSentence)
 		{
-			translation = translations.get(toRemove);
+			this.translation = translations.get(toRemove);
 			System.out.println("Translation: " + translation);
 		}
 		if(isSentence)

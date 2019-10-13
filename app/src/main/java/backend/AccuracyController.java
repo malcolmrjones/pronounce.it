@@ -25,69 +25,28 @@ public class AccuracyController {
 		String speech = input.toLowerCase(); //text input from speech-to-text
 		
 		//sentences to be updated without non-letters
-		String sentence2 = s;
+		String sentence2 = sentence;
 		String speech2 = speech;
 		
 		
 		//checks for non-letter characters in normal sentence
-		for(int i = 0; i < sentence.length(); i++)
-		{
-			if(sentence.charAt(i) == '.')
-			{
-				sentence2 = sentence.replace(".", "");
-			}
-			if(sentence.charAt(i) == '!')
-			{
-				sentence2 = sentence.replace("!", "");
-			}
-			if(sentence.charAt(i) == '?')
-			{
-				sentence2 = sentence.replace("?", "");
-			}
-			if(sentence.charAt(i) == ',')
-			{
-				sentence2 = sentence.replace(",", "");
-			}
-			if(sentence.charAt(i) == '�')
-			{
-				sentence2 = sentence.replace("�", "");
-			}
-			if(sentence.charAt(i) == '�')
-			{
-				sentence2 = sentence.replace("�", "");
-			}
-		}
+		sentence2 = sentence2.replace(".", "");
+		sentence2 = sentence2.replace("!", "");
+		sentence2 = sentence2.replace("?", "");
+		sentence2 = sentence2.replace(",", "");
+		sentence2 = sentence2.replace("¿", "");
+		sentence2 = sentence2.replace("¡", "");
 		
 		//checks for non-letter characters in normal sentence
-			for(int i = 0; i < speech.length(); i++)
-			{
-				if(speech.charAt(i) == '.')
-				{
-					speech2 = speech.replace(".", "");
-				}
-				if(speech.charAt(i) == '!')
-				{
-					speech2 = speech.replace("!", "");
-				}
-				if(speech.charAt(i) == '?')
-				{
-					speech2 = speech.replace("?", "");
-				}
-				if(speech.charAt(i) == ',')
-				{
-					speech2 = speech.replace(",", "");
-				}
-				if(speech.charAt(i) == '�')
-				{
-					speech2 = speech.replace("�", "");
-				}
-				if(speech.charAt(i) == '�')
-				{
-					speech2 = speech.replace("�", "");
-				}
-			}
-		
-		
+		speech2 = speech2.replace(".", "");
+		speech2 = speech2.replace("!", "");
+		speech2 = speech2.replace("?", "");
+		speech2 = speech2.replace(",", "");
+		speech2 = speech2.replace("¿", "");
+		speech2 = speech2.replace("¡", "");
+
+
+
 		//splits updated lists into individual words.
 		String[] correctWords = sentence2.split(" ");
 		String[] userWords = speech2.split(" ");
