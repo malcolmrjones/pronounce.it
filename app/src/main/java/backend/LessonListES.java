@@ -35,7 +35,7 @@ public class LessonListES implements LessonList {
 	File aud25 = new File("recording_25.wav");
 	
 	ArrayList<String> ES_sent1 = new ArrayList<String>(Arrays.asList(
-			"Ella come.", "El bebe.", "Ella bebe.","El come.", "Yo corro.", "El corre.", "Nosotros comemos.", "Nosotros corremos."));
+			"Ella come.", "El bebé.", "Ella bebé.","El come.", "Yo corro.", "El corre.", "Nosotros comemos.", "Nosotros corremos."));
 	ArrayList<String> ES_trans1 = new ArrayList<String>(Arrays.asList(
 			"She eats.", "He drinks.", "She drinks.","He eats.", "I run.", "He runs.", "We eat.", "We run."));
 	ArrayList<File> ES_audio1 = new ArrayList<File>(Arrays.asList(aud1, aud2, aud3, aud4, aud5, aud6, aud7, aud8));
