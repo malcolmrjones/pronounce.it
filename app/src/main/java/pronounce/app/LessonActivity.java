@@ -10,11 +10,21 @@ import android.os.Environment;
 import android.view.*;
 import android.view.View.*;
 import android.widget.Button;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.IOException;
 
+import backend.Lesson;
+import backend.LessonListES;
+
 public class LessonActivity extends AppCompatActivity {
+
+    private LessonListES currentList;
+    private Lesson currentLesson;
+    private String currentSentence;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +35,15 @@ public class LessonActivity extends AppCompatActivity {
         Button button_listen = (Button)findViewById(R.id.button_listen);
         Button button_record = (Button)findViewById(R.id.button_record);
 
+        currentList = new LessonListES();
+        if (getIntent().getSerializableExtra("Lesson") == null)
+        currentLesson = currentList.getLesson("ES1");
+        else {
+            currentLesson = (Lesson)getIntent().getSerializableExtra("Lesson");
+        }
 
+        currentLesson.pickSentence();
+        currentSentence = currentLesson.getSentence();
 
         button_record.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
@@ -75,8 +93,29 @@ public class LessonActivity extends AppCompatActivity {
     }
 
     public void onClickPlay(View v) {
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.recording);
-        mp.start();
-        System.out.println("Listen to audio...");
+
+        TextView labelword = (TextView)findViewById(R.id.label_word);
+
+        if(currentLesson.getIsSentence()) {
+            labelword.setText("");
+            String filename = currentLesson.getCurrentFile().getName();
+            filename = filename.substring(0, filename.length() - 4);
+            System.out.println(filename);
+            MediaPlayer mp = MediaPlayer.create(this, getResources().getIdentifier(filename, "raw", getPackageName()));
+            mp.start();
+            System.out.println("Listen to audio...");
+        }
+        else
+        {
+            String word = currentLesson.getSentence();
+            labelword.setText(word);
+
+        }
+    }
+
+    public void onClickSubmit(View v) {
+        Intent submitForResults = new Intent(this, ResultsActivity.class);
+        submitForResults.putExtra("Lesson", currentLesson);
+        startActivity(submitForResults);
     }
 }
