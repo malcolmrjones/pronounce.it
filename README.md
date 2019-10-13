@@ -1,4 +1,4 @@
-# prounce.it
+# pronounce.it
 
 ## Inspiration
 Learning a new language through self study is hard with traditional methods. Many methods are not interactive or do not give proper feedback. Our app specifically addressing how can users better improve their speech and pronunciation in foreign languages. A user will be able to speak to our interactive mobile app, and get their results instantly. Our app will help the speaker practice by re-seeing and pronouncing missed words, and openly hearing what they pronounced right and wrong for future improvement. 
