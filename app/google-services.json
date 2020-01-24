@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "479101621507",
+    "firebase_url": "https://speechtotext-4ead0.firebaseio.com",
+    "project_id": "speechtotext-4ead0",
+    "storage_bucket": "speechtotext-4ead0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479101621507:android:b8db83d99f2d4815d60536",
+        "android_client_info": {
+          "package_name": "pronounce.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479101621507-ebk9nfcgsqtepa534ru60kdcddalv9ii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pronounce.app",
+            "certificate_hash": "0dabf674f207e5dba1372ed1378fb48aa096d034"
+          }
+        },
+        {
+          "client_id": "479101621507-3obobdkk8078s4lq9ovqd7a0nqq66nm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrGjcOO56Y86LYLAALnNYjnWyS_23XfKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479101621507-3obobdkk8078s4lq9ovqd7a0nqq66nm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
